@@ -72,7 +72,7 @@ def build_excel():
     ap.append(["Tarih","Saat","Müşteri","Telefon","Hizmet","Ücret","Durum","Not"])
     sample=[["2026-10-05","10:00","Örnek Müşteri","05xx xxx xx xx","Saç + Sakal",750,"Bekliyor","Örnek satır — silebilirsiniz"]]
     ap.append(sample[0])
-    for _ in range(499): ap.append(["","","","", "",0,"Bekliyor",""])
+    for _ in range(499): ap.append(["","","","", "",0,"",""])
     table_sheet(ap,[14,10,24,18,22,14,16,36])
     ap["A2"].number_format="dd.mm.yyyy"; ap["F2"].number_format='#,##0.00'
     for r in range(3,502): ap[f"F{r}"].number_format='#,##0.00'
