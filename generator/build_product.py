@@ -46,13 +46,13 @@ def build_excel():
     dash["A2"]="Zamanını planla, randevularını tek yerden yönet."; dash["A2"].font=Font(size=11,italic=True,color=GREY)
     dash.merge_cells("A1:H1"); dash.merge_cells("A2:H2")
     cards=[("A4","Toplam Randevu",'=COUNTIF(Randevular!A2:A501,"<>")'),
-           ("C4","Bekleyen","=COUNTIF(Randevular!G2:G501,"Bekliyor")"),
-           ("E4","Onaylanan","=COUNTIF(Randevular!G2:G501,"Onaylandı")"),
-           ("G4","Tamamlanan","=COUNTIF(Randevular!G2:G501,"Tamamlandı")"),
-           ("A7","Toplam Müşteri","=COUNTIF(Müşteriler!A2:A501,"<>")"),
-           ("C7","Toplam Gelir","=SUM(Finans!D2:D501)"),
-           ("E7","Toplam Gider","=SUM(Finans!H2:H501)"),
-           ("G7","Net Kazanç","=C8-E8")]
+           ("C4","Bekleyen",'=COUNTIF(Randevular!G2:G501,"Bekliyor")'),
+           ("E4","Onaylanan",'=COUNTIF(Randevular!G2:G501,"Onaylandı")'),
+           ("G4","Tamamlanan",'=COUNTIF(Randevular!G2:G501,"Tamamlandı")'),
+           ("A7","Toplam Müşteri",'=COUNTIF(Müşteriler!A2:A501,"<>")'),
+           ("C7","Toplam Gelir",'=SUM(Finans!D2:D501)'),
+           ("E7","Toplam Gider",'=SUM(Finans!H2:H501)'),
+           ("G7","Net Kazanç",'=C8-E8')]
     for pos,label,formula in cards:
         c=dash[pos]; c.value=label; c.font=Font(bold=True,color=GREY); c.fill=PatternFill("solid",fgColor=LIGHT)
         v=dash.cell(c.row+1,c.column); v.value=formula; v.font=Font(size=16,bold=True,color=NAVY); v.fill=PatternFill("solid",fgColor=WHITE)
