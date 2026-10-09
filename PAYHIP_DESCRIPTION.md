@@ -44,7 +44,7 @@ Standard planned price: **$49**.
 Digital download. After purchase, the customer receives the ZIP package containing the Excel workbook and supporting files.
 
 ### Important
-This is a digital Excel template, not a cloud appointment-management service. Microsoft Excel is required to edit and use the workbook.
+This is a digital Excel template, not a cloud appointment-management service. Microsoft Excel is required to edit and use the workbook. Each input sheet supports 500 records. All financial values are TRY. Appointment fees are not automatically booked as income; actual transactions are entered in the Finance sheet. Customer visit/spend totals are entered manually. Business-hour settings are informational. The workbook starts empty.
 
 ### License
 Single-business use only. Redistribution, resale, sublicensing or public sharing of the included files is prohibited.
